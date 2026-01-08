@@ -390,7 +390,7 @@ export const ReportView: React.FC<ReportViewProps> = ({ results, agents, logs })
 
       {/* System Logs */}
       <div className="bg-black border border-cyber-800 rounded-xl p-4 font-mono text-xs">
-          <h3 className="text-green-500 mb-2 border-b border-cyber-900 pb-1 font-bold">完整系统日志 (SYSTEM LOGS) >_</h3>
+          <h3 className="text-green-500 mb-2 border-b border-cyber-900 pb-1 font-bold">完整系统日志 (SYSTEM LOGS) &gt;_</h3>
           <div className="h-48 overflow-y-auto space-y-1 text-slate-400">
                {logs.map((log, i) => (
                  <div key={i} className="break-words">

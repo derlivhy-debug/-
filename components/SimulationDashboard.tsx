@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 import { Agent, AudienceFeedback, SimulationStepResult } from '../types';
 import { AgentCard } from './AgentCard';
@@ -165,7 +166,7 @@ export const SimulationDashboard: React.FC<SimulationDashboardProps> = ({
 
           {/* Console Logs */}
           <div className="flex-1 bg-black rounded-xl border border-cyber-800 p-4 font-mono text-xs overflow-hidden flex flex-col">
-            <div className="text-green-500 mb-2 border-b border-cyber-900 pb-1">系统日志 (System Logs) >_</div>
+            <div className="text-green-500 mb-2 border-b border-cyber-900 pb-1">系统日志 (System Logs) &gt;_</div>
             <div className="flex-1 overflow-y-auto space-y-1 text-slate-300">
                {logs.length === 0 && <span className="text-slate-600 italic">Ready to initialize...</span>}
                {logs.map((log, i) => (
